@@ -11,13 +11,17 @@
 			function update(e) {
 				var shorturl = shorten(e.value);
 				var out = document.getElementById("output");
+				var bb = document.getElementById("b");
 				out.href = shorturl;
 				out.innerText = shorturl;
+				bb.innerText = "[url=" + encodeURI(shorturl) + "]" + shorturl + "[/url]";
 			}
 		</script>
 		<h1>Scratch URL Shortener</h1>
 		<input type="text" style="width:24em;" value="https://scratch.mit.edu/projects/54931060/" oninput="update(this)">
 		-&gt;
-		<a id="output" href="http://😸.tk/ӡ⇇">http://😸.tk/ӡ⇇</a>
+		<a id="output" href="http://ﺣ.tk/ӡ⇇">http://ﺣ.tk/ӡ⇇</a>
+		<p>Scratch BBCode:</p>
+		<pre id="bb"></pre>
 	</body>
 </html>
