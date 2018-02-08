@@ -11,10 +11,10 @@
 			function update(e) {
 				var shorturl = shorten(e.value);
 				var out = document.getElementById("output");
-				var bb = document.getElementById("b");
+				var bb = document.getElementById("bb");
 				out.href = shorturl;
 				out.innerText = shorturl;
-				bb.innerText = "[url=" + encodeURI(shorturl) + "]" + shorturl + "[/url]";
+				bb.innerText = "[url=" + encodeURI(shorturl) + "]" + shorturl.split("http://")[1] + "[/url]";
 			}
 		</script>
 		<h1>Scratch URL Shortener</h1>
