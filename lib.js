@@ -2,7 +2,7 @@ var base = charset.length;
 
 function shorten(url) {
 	var id = parseInt(url.match(/\/([0-9]+)\//)[1]);
-	var shorturl = "http://ﺣ.tk/";
+	var shorturl = "http://ح.tk/";
 	var extension = "";
 	while (id) {
 		var digit = id % base;
