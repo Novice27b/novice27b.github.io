@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Redirecting</title>
+	</head>
+	<body>
+		<script type="text/javascript" src="charset.js"></script>
+		<script type="text/javascript" src="lib.js"></script>
+		<script type="text/javascript">
+			console.log(shorten("https://scratch.mit.edu/projects/54931060/"));
+			console.log(expand("ӡ⇇"));
+			var path = decodeURIComponent(window.location.pathname.replace("/",""));
+			window.location = expand(path);
+		</script>
+	</body>
+</html>

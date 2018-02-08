@@ -1,8 +1,23 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="UTF-8">
+		<title>Scratch URL Shortener</title>
 	</head>
 	<body>
-		<h1>Hello!</h1>
+		<script type="text/javascript" src="charset.js"></script>
+		<script type="text/javascript" src="lib.js"></script>
+		<script type="text/javascript">
+			function update(e) {
+				var shorturl = shorten(e.value);
+				var out = document.getElementById("output");
+				out.href = shorturl;
+				out.innerText = shorturl;
+			}
+		</script>
+		<h1>Scratch URL Shortener</h1>
+		<input type="text" style="width:24em;" value="https://scratch.mit.edu/projects/54931060/" oninput="update(this)">
+		-&gt;
+		<a id="output" href="http://😸.tk/ӡ⇇">http://😸.tk/ӡ⇇</a>
 	</body>
 </html>
